@@ -1,0 +1,51 @@
+//北美
+{ Error: querySrv ETIMEOUT _mongodb._tcp.cluster0-yvb23.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (dns.js:196:19)
+  errno: 'ETIMEOUT',
+  code: 'ETIMEOUT',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster0-yvb23.mongodb.net' }
+
+
+
+
+//台湾
+{ Error: querySrv ETIMEOUT _mongodb._tcp.cluster0-of4pw.gcp.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (dns.js:196:19)
+  errno: 'ETIMEOUT',
+  code: 'ETIMEOUT',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.cluster0-of4pw.gcp.mongodb.net' }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  { MongoNetworkError: failed to connect to server [cluster0-shard-00-00-yvb23.mongodb.net:27017] on first connect [MongoNetworkError: connect ETIMEDOUT 3.220.236.219:27017]
+    at Pool.<anonymous> (C:\Users\37435\Desktop\koa_app\node_modules\_mongodb-core@3.2.7@mongodb-core\lib\topologies\server.js:431:11)
+    at Pool.emit (events.js:198:13)
+    at connect (C:\Users\37435\Desktop\koa_app\node_modules\_mongodb-core@3.2.7@mongodb-core\lib\connection\pool.js:557:14)
+    at makeConnection (C:\Users\37435\Desktop\koa_app\node_modules\_mongodb-core@3.2.7@mongodb-core\lib\connection\connect.js:39:11)
+    at callback (C:\Users\37435\Desktop\koa_app\node_modules\_mongodb-core@3.2.7@mongodb-core\lib\connection\connect.js:261:5)
+    at TLSSocket.err (C:\Users\37435\Desktop\koa_app\node_modules\_mongodb-core@3.2.7@mongodb-core\lib\connection\connect.js:286:7)
+    at Object.onceWrapper (events.js:286:20)
+    at TLSSocket.emit (events.js:198:13)
+    at emitErrorNT (internal/streams/destroy.js:91:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:59:3)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+  name: 'MongoNetworkError',
+  errorLabels: [ 'TransientTransactionError' ],
+  [Symbol(mongoErrorContextSymbol)]: {} }
