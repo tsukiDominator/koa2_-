@@ -78,6 +78,10 @@ const dburl = require('../config/keys').mongoURL;
  * 正式代码
  * mongoose连接本地数据库 localhost:27019/testSystem
  */
+
+// Make Mongoose use `findOneAndUpdate()`. Note that this option is `true`
+// by default, you need to set it to false.
+mongoose.set('useFindAndModify', false);
 mongoose.connect(dburl, { useNewUrlParser: true })
     .then(() => { console.log('数据库testSystem连接成功'); })
     .catch(err => console.log("连接数据库testSystem失败：", err));

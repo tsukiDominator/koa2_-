@@ -33,8 +33,8 @@ router.get('/test', async ctx => {
  *access 接口是公开的
  */
 router.post('/register', async ctx => {
-    const { errors, isValid } = validateRegisterInput(ctx.request.body);
     //判断是否验证通过
+    const { errors, isValid } = validateRegisterInput(ctx.request.body);
     if (!isValid) {
         ctx.status = 400;
         ctx.body = errors;
