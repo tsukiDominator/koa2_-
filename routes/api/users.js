@@ -106,7 +106,7 @@ router.post('/login', async ctx => {
         if (result) {
             //返回token
             const payLoad = { id: user.id, name: user.name, avatar: user.avatar };
-            const token = jwt.sign(payLoad, keys.secretOrKey, { expiresIn: 3600 });
+            const token = jwt.sign(payLoad, keys.secretOrKey, { expiresIn: 3600 });//这里设置token有效期为3600秒?
             ctx.status = 200;
             ctx.body = { success: true, token: "Bearer " + token };
         } else {
