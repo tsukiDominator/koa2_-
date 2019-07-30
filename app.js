@@ -8,6 +8,7 @@ const passport = require('koa-passport')
 //引入路由
 const users = require('./routes/api/users');
 const profile = require('./routes/api/profile');
+const posts = require('./routes/api/posts');
 
 //实例化
 const app = new Koa();
@@ -24,6 +25,7 @@ require('./config/passport')(passport);
 //配置路由地址localhost:5000/api/users 只要路径前缀如此，都会进入users.js中寻找路由
 router.use('/api/users', users);
 router.use('/api/profile', profile);
+router.use('/api/posts', posts);
 
 //配置路由
 app.use(router.routes()).use(router.allowedMethods());
